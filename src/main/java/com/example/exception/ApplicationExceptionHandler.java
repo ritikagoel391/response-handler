@@ -1,5 +1,7 @@
 package com.example.exception;
 
+import java.util.Map;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -21,7 +23,7 @@ public class ApplicationExceptionHandler {
 	 * @return
 	 */
 	@ExceptionHandler(ApplicationException.class)
-	public ResponseEntity<ApplicationException> handleException(ApplicationException ex) {
-		return new ResponseEntity<>(ex, ex.getHttpStatus());
+	public ResponseEntity<Map<String, Object>> handleException(ApplicationException ex) {
+		return new ResponseEntity<>(ex.getErrorResponse(), ex.getHttpStatus());
 	}
 }

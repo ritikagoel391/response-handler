@@ -103,7 +103,7 @@ public class ApplicationExceptionHelper {
 		Map<String, Object> errorResponse = new HashMap<>();
 		errorResponse.put(ResponseKey.responseTime.toString(), LocalDateTime.now());
 		errorResponse.put(ResponseKey.status.toString(), status);
-		errorResponse.put(ResponseKey.apiRespCode.toString(), apiResponseCode);
+		errorResponse.put(ResponseKey.apiRespCode.toString(), apiResponseCode.getApiRespCode());
 		errorResponse.put(ResponseKey.apiName.toString(), apiName);
 		errorResponse.put(ResponseKey.errors.toString(), errors);
 		return new ApplicationException(errorResponse, httpStatus);
