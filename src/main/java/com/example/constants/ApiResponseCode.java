@@ -10,6 +10,7 @@ package com.example.constants;
  */
 public enum ApiResponseCode {
 	SUCCESS(2000),
+	NOT_FOUND(2020),
 	INTERNAL_SERVER_ERROR(5000);
 
 	private Integer apiRespCode;

@@ -3,7 +3,6 @@ package com.example.response.model;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-import com.example.constants.ApiResponseCode;
 import com.example.constants.Status;
 
 /**
@@ -23,13 +22,13 @@ public class ApplicationResponse<T> implements Serializable {
 
 	Status responseStatus;
 
-	ApiResponseCode apiResponseCode;
+	Integer apiResponseCode;
 
 	String apiName;
 
 	T response;
 
-	public ApplicationResponse(LocalDateTime responseTime, Status status, ApiResponseCode apiRespCode, String apiName,
+	public ApplicationResponse(LocalDateTime responseTime, Status status, Integer apiRespCode, String apiName,
 			T response) {
 		this.responseTime = responseTime;
 		this.responseStatus = status;
@@ -54,11 +53,11 @@ public class ApplicationResponse<T> implements Serializable {
 		this.responseStatus = responseStatus;
 	}
 
-	public ApiResponseCode getApiResponseCode() {
+	public Integer getApiResponseCode() {
 		return apiResponseCode;
 	}
 
-	public void setApiResponseCode(ApiResponseCode apiResponseCode) {
+	public void setApiResponseCode(Integer apiResponseCode) {
 		this.apiResponseCode = apiResponseCode;
 	}
 

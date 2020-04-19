@@ -24,7 +24,7 @@ public class ResponseUtil {
 	 * @return
 	 */
 	public static <T> ApplicationResponse<T> createApplicationResponse(String apiName, T response) {
-		return new ApplicationResponse<>(LocalDateTime.now(), Status.SUCCESS, ApiResponseCode.SUCCESS, apiName,
+		return new ApplicationResponse<>(LocalDateTime.now(), Status.SUCCESS, ApiResponseCode.SUCCESS.getApiRespCode(), apiName,
 				response);
 	}
 

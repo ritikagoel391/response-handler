@@ -84,7 +84,7 @@ public class ApplicationExceptionHelper {
 	private Map<String, String> createErrorSource(String source, String message) {
 		Map<String, String> errorSource = new HashMap<>();
 		errorSource.put(ResponseKey.source.toString(), source);
-		errorSource.put(ResponseKey.message.toString(), source);
+		errorSource.put(ResponseKey.message.toString(), message);
 		return errorSource;
 	}
 
