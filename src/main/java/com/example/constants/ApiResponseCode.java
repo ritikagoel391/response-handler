@@ -9,6 +9,7 @@ package com.example.constants;
  *
  */
 public enum ApiResponseCode {
+	SUCCESS(2000),
 	INTERNAL_SERVER_ERROR(5000);
 
 	private Integer apiRespCode;
@@ -18,7 +19,7 @@ public enum ApiResponseCode {
 	}
 
 	/**
-	 * This method acts as a getter for apiRespCode instance variable.
+	 * This method acts as a getter for apiResponseCode instance variable.
 	 * 
 	 * @return This returns the api response code. 
 	 */

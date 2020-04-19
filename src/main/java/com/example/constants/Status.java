@@ -1,7 +1,7 @@
 package com.example.constants;
 
 /**
- * This enum defines constants for the response status.
+ * This enum defines constants for the response responseStatus.
  * 
  * @author ritika.goel
  *

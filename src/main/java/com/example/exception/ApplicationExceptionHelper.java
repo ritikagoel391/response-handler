@@ -28,7 +28,7 @@ public class ApplicationExceptionHelper {
 	 * application level exception occurs. This helps the client in identifying what
 	 * was the error source and details of the error occurred.
 	 * 
-	 * @param status          - specifies the response status for the request
+	 * @param responseStatus          - specifies the response responseStatus for the request
 	 * @param apiResponseCode - specifies the api response code for the request
 	 * @param apiName         - specifies the api name for which this response is
 	 *                        being sent
@@ -91,7 +91,7 @@ public class ApplicationExceptionHelper {
 	/**
 	 * This method prepares the exception object and return the same to the caller.
 	 * 
-	 * @param status          - specifies the response status for the request
+	 * @param responseStatus          - specifies the response responseStatus for the request
 	 * @param apiResponseCode - specifies the api response code for the request
 	 * @param apiName         - specifies the api name for which this response is
 	 *                        being sent
