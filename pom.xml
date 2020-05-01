@@ -9,6 +9,11 @@
 	<name>response-handler</name>
 	<description>This project will act as a common library for response handling of spring projects, and can be plugged in to any project by simply providing the maven dependency in pom.xml</description>
 
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -21,5 +26,5 @@
 			<version>5.2.5.RELEASE</version>
 		</dependency>
 	</dependencies>
-	
+
 </project>
